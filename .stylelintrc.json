@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-prettier/recommended",
+    "stylelint-config-standard-scss",
+    "stylelint-config-standard-vue/scss"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "no-descending-specificity": null,
+    "function-name-case": "upper",
+    "block-no-empty": null,
+    "declaration-empty-line-before": null,
+    "selector-class-pattern": null
+  }
+}

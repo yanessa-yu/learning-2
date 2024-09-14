@@ -1,0 +1,7 @@
+{
+  "tabWidth": 2,
+  "semi": false,
+  "vueIndentScriptAndStyle": false,
+  "singleQuote": false,
+  "css.trailingSemicolon": true
+}

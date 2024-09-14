@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ES2015",
+    "module": "ES2020",
+    "lib": ["ES2015", "DOM"],
+    "moduleResolution": "Node"
+  },
+  "include": ["src/**/*", "*.d.ts"],
+  "exclude": ["node_modules"]
+}
