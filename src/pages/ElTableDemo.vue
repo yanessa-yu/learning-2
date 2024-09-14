@@ -104,7 +104,7 @@ for (let i = 1; i < 200; i++) {
     age: 18,
     sex: "女",
     date: new Date(),
-    address: "上海市闵行区浦江镇闵驰二路256弄",
+    address: "",
   }
   tableData.push(item)
 }

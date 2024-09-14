@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --progress",
+    "build": "webpack --progress",
     "lint": "eslint  '**/*.vue' '**/*.ts' '**/*.js' '**/*.cjs' --fix",
     "lint:css": "stylelint '**/*.vue' '**/*.scss' "
   },

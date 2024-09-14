@@ -32,6 +32,8 @@ function loop(list) {
 </script>
 
 <style scoped lang="scss">
+$px20: 20px;
+
 @keyframes blink {
   0% {
     opacity: 1;

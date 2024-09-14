@@ -1,0 +1,62 @@
+"use strict";
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunkts_animates_webpack_demo"] = self["webpackChunkts_animates_webpack_demo"] || []).push([["src_pages_VueNexttick_vue"],{
+
+/***/ "./src/pages/VueNexttick.vue":
+/*!***********************************!*\
+  !*** ./src/pages/VueNexttick.vue ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _VueNexttick_vue_vue_type_template_id_4990a8c2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VueNexttick.vue?vue&type=template&id=4990a8c2 */ \"./src/pages/VueNexttick.vue?vue&type=template&id=4990a8c2\");\n/* harmony import */ var _VueNexttick_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VueNexttick.vue?vue&type=script&setup=true&lang=js */ \"./src/pages/VueNexttick.vue?vue&type=script&setup=true&lang=js\");\n/* harmony import */ var _node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/exportHelper.js */ \"./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/exportHelper.js\");\n\n\n\n\n;\nconst __exports__ = /*#__PURE__*/(0,_node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_VueNexttick_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], [['render',_VueNexttick_vue_vue_type_template_id_4990a8c2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',\"src/pages/VueNexttick.vue\"]])\n/* hot reload */\nif (false) {}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);\n\n//# sourceURL=webpack://ts-animates-webpack-demo/./src/pages/VueNexttick.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./src/pages/VueNexttick.vue?vue&type=script&setup=true&lang=js":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./src/pages/VueNexttick.vue?vue&type=script&setup=true&lang=js ***!
+  \*********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/.pnpm/vue@3.4.25_typescript@5.4.5/node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  __name: 'VueNexttick',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\nconst count = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(0)\n\n;(0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(count, (val) => {\n  console.log(val)\n})\n\nconst count2 = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {\n  return count.value * 2\n})\n\nconst changeCount1 = () => {\n  ;(0,vue__WEBPACK_IMPORTED_MODULE_0__.nextTick)(() => {\n    count.value = 10 // 同步任务下的微任务\n  })\n  count.value = 20 // 同步任务下的微任务\n}\n\nconst changeCount2 = () => {\n  setTimeout(() => {\n    // 宏任务\n    ;(0,vue__WEBPACK_IMPORTED_MODULE_0__.nextTick)(() => {\n      // 当前宏任务下的微任务\n      count.value = 100\n    })\n    count.value = 200 //对应的watchers也是当前宏任务下的微任务\n    ;(0,vue__WEBPACK_IMPORTED_MODULE_0__.nextTick)(() => {\n      // 当前宏任务下的微任务\n      count.value = 300\n    })\n  }, 0)\n}\n\n// 生成修改count值的方法\n\n\n;(0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {\n  changeCount1()\n  changeCount2()\n})\n\nconst __returned__ = { count, count2, changeCount1, changeCount2, ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref, watch: vue__WEBPACK_IMPORTED_MODULE_0__.watch, computed: vue__WEBPACK_IMPORTED_MODULE_0__.computed, nextTick: vue__WEBPACK_IMPORTED_MODULE_0__.nextTick, onMounted: vue__WEBPACK_IMPORTED_MODULE_0__.onMounted }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n});\n\n//# sourceURL=webpack://ts-animates-webpack-demo/./src/pages/VueNexttick.vue?./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet%5B1%5D.rules%5B9%5D.use%5B0%5D");
+
+/***/ }),
+
+/***/ "./src/pages/VueNexttick.vue?vue&type=script&setup=true&lang=js":
+/*!**********************************************************************!*\
+  !*** ./src/pages/VueNexttick.vue?vue&type=script&setup=true&lang=js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_9_use_0_VueNexttick_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_9_use_0_VueNexttick_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./VueNexttick.vue?vue&type=script&setup=true&lang=js */ \"./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./src/pages/VueNexttick.vue?vue&type=script&setup=true&lang=js\");\n \n\n//# sourceURL=webpack://ts-animates-webpack-demo/./src/pages/VueNexttick.vue?");
+
+/***/ }),
+
+/***/ "./src/pages/VueNexttick.vue?vue&type=template&id=4990a8c2":
+/*!*****************************************************************!*\
+  !*** ./src/pages/VueNexttick.vue?vue&type=template&id=4990a8c2 ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: () => (/* reexport safe */ _node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_9_use_0_VueNexttick_vue_vue_type_template_id_4990a8c2__WEBPACK_IMPORTED_MODULE_0__.render)\n/* harmony export */ });\n/* harmony import */ var _node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_pnpm_vue_loader_17_4_2_vue_3_4_25_webpack_5_91_0_node_modules_vue_loader_dist_index_js_ruleSet_1_rules_9_use_0_VueNexttick_vue_vue_type_template_id_4990a8c2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./VueNexttick.vue?vue&type=template&id=4990a8c2 */ \"./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./src/pages/VueNexttick.vue?vue&type=template&id=4990a8c2\");\n\n\n//# sourceURL=webpack://ts-animates-webpack-demo/./src/pages/VueNexttick.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./src/pages/VueNexttick.vue?vue&type=template&id=4990a8c2":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet[1].rules[9].use[0]!./src/pages/VueNexttick.vue?vue&type=template&id=4990a8c2 ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/.pnpm/vue@3.4.25_typescript@5.4.5/node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nconst _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", { class: \"\" }, \"nextTick\", -1 /* HOISTED */)\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [\n    _hoisted_1,\n    (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", null, [\n      (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.count), 1 /* TEXT */),\n      (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"div\", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.count2), 1 /* TEXT */)\n    ])\n  ], 64 /* STABLE_FRAGMENT */))\n}\n\n//# sourceURL=webpack://ts-animates-webpack-demo/./src/pages/VueNexttick.vue?./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B2%5D!./node_modules/.pnpm/vue-loader@17.4.2_vue@3.4.25_webpack@5.91.0/node_modules/vue-loader/dist/index.js??ruleSet%5B1%5D.rules%5B9%5D.use%5B0%5D");
+
+/***/ })
+
+}]);
